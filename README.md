@@ -1,2 +1,2 @@
-# SignalR_2
-Simple chat example with SignalR 2
+# Simple SignalR chat example using Hubs..
+![src](https://github.com/narekye/SignalR_2_MVC/blob/master/icon-signalr.png)
