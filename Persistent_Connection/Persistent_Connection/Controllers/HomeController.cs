@@ -26,5 +26,10 @@ namespace Persistent_Connection.Controllers
 
             return View();
         }
+
+        public ActionResult Chat()
+        {
+            return this.View();
+        }
     }
 }
