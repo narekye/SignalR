@@ -1,7 +1,6 @@
-﻿using System;
-using System.Threading.Tasks;
-using Microsoft.Owin;
+﻿using Microsoft.Owin;
 using Owin;
+using Persistent_Connection.Connection;
 
 [assembly: OwinStartup(typeof(Persistent_Connection.Startup))]
 
@@ -11,7 +10,7 @@ namespace Persistent_Connection
     {
         public void Configuration(IAppBuilder app)
         {
-            app.MapSignalR<>();
+            app.MapSignalR<ChatConnection>("/chat");
         }
     }
 }
