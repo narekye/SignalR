@@ -31,12 +31,8 @@
 
 	</div>
 	<input id="username" type="hidden" />
-	<!--<script src="~/Scripts/jquery-1.10.2.js"></script>-->
-
 	<script src="../../Scripts/jquery-2.1.4.js"></script>
 	<script src="~/Scripts/jquery.signalR-2.2.2-preview1.js"></script>
-	<!--<script src="~/Scripts/jquery.signalR-2.2.2-preview1.min.js"></script>-->
-	<!--<script src="~/Scripts/jquery.signalR-2.2.2-preview1.min.js"></script>-->
 	<script>
 	$(function () {
 		alert("glob");
@@ -44,11 +40,11 @@
 		// receiving the message
 		var conn = $.connection("/chat");
 
-		alert(conn);
+		alert(conn + " tipy");
 		conn.received(function(data) {
 			$('#chatroom ul').append("<li><strong>" + htmlEncode(data.Name) + '<strong/>' + htmlEncode(data.Message) + '</li>');
 		});
-		alert("gtnlog");
+		alert("btnlog-in hasav");
 		$('#btnlogin')
 			.click(function () {
 				// alert('mtav');
